@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  #education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('C:/Users/Ivan/Downloads/docs/MEDIA/BG.png') no-repeat center center/cover;
+    opacity: 5%; 
+    z-index: -1;
+  }
+  
+  #education h2 {
+    font-size: 2.5rem;
+    color: black; 
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 100px; 
+    z-index: 1;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px; 
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  .education-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+  }
+  
+  .education-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .education-item .years {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .education-item .description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  @media (min-width: 600px) {
+    .education-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .education-item {
+      flex: 1 1 calc(50% - 20px);
+      margin: 10px;
+    }
+  }
+  
